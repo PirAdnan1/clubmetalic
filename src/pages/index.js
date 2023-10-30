@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 // components
-import Navbar from "@/components/Navbar";
+import HomeContents from "@/contents";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      <HomeContents />
     </>
   );
 }

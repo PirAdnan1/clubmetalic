@@ -18,24 +18,28 @@ function Navbar() {
   return (
     <Container>
       <nav className="flex flex-col lg:flex-row lg:items-center items-start pl-6 lg:pl-0 lg:justify-center  justify-start lg:gap-56 gap-6 pt-5 pb-4 bg-secondary shadow-[0px_3px_3px_0px_rgba(196, 206, 218, 0.51)]">
-        <div className="flex justify-between items-center">
-          <h1 className="text-primary lg:text-4xl text-2xl max-w-[159px] lg:max-w-full leading-5 font-bold">
-            double your net worth<span className="text-base">.club</span>
-          </h1>
-          <button
-            className="lg:hidden"
-            onClick={() => setMenuClosed((closed) => !closed)}
-          >
-            {menuClosed ? <Menue /> : <CloseButton />}
-          </button>
+        <div className="flex items-center">
+          <div>
+            <h1 className="text-primary lg:text-4xl text-2xl max-w-[159px] lg:max-w-full leading-5 font-bold">
+              double your net worth<span className="text-base">.club</span>
+            </h1>
+          </div>
+          <div>
+            <button
+              className="lg:hidden float-right"
+              onClick={() => setMenuClosed((closed) => !closed)}
+            >
+              {menuClosed ? <Menue /> : <CloseButton />}
+            </button>
+          </div>
         </div>
 
         <ul
           className={clsx(
             "text-primary flex flex-col lg:flex-row lg:items-center items-start  gap-7 text-base mt-4",
             {
-              "hidden md:flex flex-col": menuClosed,
-            "translate-x-0": !menuClosed,
+              "hidden lg:flex flex-col": menuClosed,
+              "translate-x-0": !menuClosed,
             }
           )}
         >

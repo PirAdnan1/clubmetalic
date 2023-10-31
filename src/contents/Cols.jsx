@@ -40,7 +40,9 @@ function Cols() {
             <div className="bg-[#2AC7D0] rounded-lg">
               <Card />
             </div>
-            <p className="text-xs text-primary whitespace-nowrap font-bold">Current Balance</p>
+            <p className="text-xs text-primary whitespace-nowrap font-bold">
+              Current Balance
+            </p>
 
             <div className="w-0.5 h-7 bg-black" />
             <span className="text-primary whitespace-nowrap font-bold bg-[#DCE5F9] px-2 rounded-xl shadow-lg py-2">
@@ -52,7 +54,7 @@ function Cols() {
             Update balance
           </button>
         </div>
-        <div className="bg-white px-6 rounded-lg">
+        <div className="bg-white px-6 shadow-lg rounded-xl">
           <h1 className="text-[56px] text-primary text-center font-bold">
             Flip
           </h1>
@@ -74,7 +76,9 @@ function Cols() {
             <div className="bg-[#2AC7D0] p-1.5 rounded-lg mr-9">
               <BlueIcon />
             </div>
-            <span className="mr-2 text-primary whitespace-nowrap font-bold">Enter amount</span>
+            <span className="mr-2 text-primary whitespace-nowrap font-bold">
+              Enter amount
+            </span>
             <div className="h-7 w-[1px] bg-black" />
             <span className="text-primary ml-2 font-bold whitespace-nowrap bg-[#C6D0E4] px-2 py-1 rounded-lg shadow-lg">
               50.00 USD
@@ -92,10 +96,14 @@ function Cols() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center px-6 items-center bg-white">
-            <h1 className="text-[56px] text-primary text-center font-bold">Withdraw</h1>
-            <span className="text-[#546E7A] text-base text-center font-bold leading-normal">Step three</span>
-            <input
+        <div className="flex flex-col justify-center shadow-lg rounded-xl px-6 items-center bg-white">
+          <h1 className="text-[56px] text-primary text-center font-bold">
+            Withdraw
+          </h1>
+          <span className="text-[#546E7A] text-base text-center font-bold leading-normal">
+            Step three
+          </span>
+          <input
             type="text"
             placeholder="Enter amout you would like to deposit"
             className="outline-none focus:outline-none mt-9 shadow-lg max-w-[394px] w-full px-4 rounded-xl py-4"
@@ -110,13 +118,14 @@ function Cols() {
             value="Stripe"
             className="bg-[#635BFF] py-4 text-white text-2xl font-bold max-w-[394px] w-full rounded-xl mt-10"
           />
-           <div className="text-center mt-32 max-w-[320px] w-full">
+          <div className="text-center mt-32 max-w-[320px] w-full">
             <button className="bg-primary py-7 text-xl text-white rounded-lg shadow-lg font-bold max-w-[320px] w-full">
               Flip the Coin
             </button>
           </div>
         </div>
       </div>
+      <div className="max-w-[659px] h-[1px] bg-[#A9B7C4] mx-auto my-[163px]" />
     </Container>
   );
 }

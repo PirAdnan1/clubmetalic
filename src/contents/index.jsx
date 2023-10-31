@@ -4,6 +4,9 @@ import React from 'react'
 import Hero from './Hero'
 import Navbar from '@/components/Navbar'
 import Cols from './Cols'
+import Winners from './Winners'
+import Verify from './Verify'
+import Footer from './Footer'
 
 function HomeContents() {
   return (
@@ -11,6 +14,9 @@ function HomeContents() {
         <Navbar />
         <Hero />
         <Cols />
+        <Winners />
+        <Verify />
+        <Footer />
     </div>
   )
 }

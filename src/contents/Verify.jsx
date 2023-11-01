@@ -58,7 +58,7 @@ function Verify() {
               <p className="text-sm max-w-[792px]">
                 <span className="underline">Step 1: Initiating a Coinflip</span>{" "}
                 <br /> To get started, you simply select the amount you want to
-                wager and click the "Start" button. Each coinflip is associated
+                wager and click the <q>Start</q> button. Each coinflip is associated
                 with a unique identifier (CID), allowing you to track and verify
                 your results. <br /> <br />{" "}
                 <span className="underline">
@@ -70,7 +70,7 @@ function Verify() {
                 random and impossible to predict. <br /> <br />{" "}
                 <span className="underline">Step 3: Displaying Results</span>{" "}
                 <br /> Once the coinflip is complete, we'll immediately display
-                the result to you. It could be "Heads" or "Tails," and you'll
+                the result to you. It could be "Heads" or <q>Tails</q>, and you'll
                 know the outcome in seconds. <br /> <br />{" "}
                 <span className="underline">Step 4: Verifying Fairness</span>{" "}
                 <br /> We believe in transparency, and that's why we provide you

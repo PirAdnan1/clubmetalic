@@ -14,7 +14,7 @@ function Cols() {
     <Container>
       <div className="grid lg:grid-cols-3 bg-[#F3F4FD] gap-24 justify-center px-8 2xl:mx-0">
         <div className="flex px-6 flex-col justify-center items-center bg-white rounded-xl shadow-lg max-w-[622px] w-full">
-          <h1 className="text-[56px] text-primary font-bold">Deposit</h1>
+          <h1 className="lg:text-[56px] text-3xl text-primary font-bold">Deposit</h1>
           <p className="text-[#546E7A] text-base font-bold leading-normal">
             Step one
           </p>
@@ -56,7 +56,7 @@ function Cols() {
           </button>
         </div>
         <div className="bg-white px-6 shadow-lg rounded-xl">
-          <h1 className="text-[56px] text-primary text-center font-bold">
+          <h1 className="lg:text-[56px] text-3xl text-primary text-center font-bold">
             Flip
           </h1>
           <div className="flex flex-col justify-center items-center">
@@ -97,8 +97,8 @@ function Cols() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center shadow-lg rounded-xl px-6 items-center bg-white">
-          <h1 className="text-[56px] text-primary text-center font-bold">
+        <div className="flex flex-col justify-center shadow-lg pb-3 lg:pb-0 rounded-xl px-6 items-center bg-white">
+          <h1 className="lg:text-[56px] text-3xl text-primary text-center font-bold">
             Withdraw
           </h1>
           <span className="text-[#546E7A] text-base text-center font-bold leading-normal">

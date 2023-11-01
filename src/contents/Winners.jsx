@@ -2,7 +2,7 @@ import React from "react";
 
 function Winners() {
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:items-start mx-6 lg:mx-0 justify-center gap-[84px]">
+    <div className="flex flex-col lg:flex-row items-center lg:items-start mx-2 lg:mx-0 justify-center gap-[84px]">
       <div className="flex flex-col shrink-0">
         <h1 className="lg:text-[56px] text-3xl text-center pb-[30px] font-bold text-primary">Previous Winners</h1>
         <table className="table-auto 2xl:w-[970px] md:w-[720px] w-full overflow-x-auto text-start">

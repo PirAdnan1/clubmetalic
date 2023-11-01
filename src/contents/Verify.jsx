@@ -51,7 +51,7 @@ function Verify() {
           </h1>
           <div className="text-[#90A4AE] bg-[#F3F4FD]">
             <p className="text-center">
-              Here we'll guide you through the key steps of how our game
+              Here w ll guide you through the key steps of how our game
               operates and how we ensure fairness.
             </p>
             <div className="shadow-lg px-[42px] py-[18px] mt-3">
@@ -70,12 +70,12 @@ function Verify() {
                 random and impossible to predict. <br /> <br />{" "}
                 <span className="underline">Step 3: Displaying Results</span>{" "}
                 <br /> Once the coinflip is complete, we'll immediately display
-                the result to you. It could be "Heads" or <q>Tails</q>, and you'll
+                the result to you. It could be <q>Heads</q> or <q>Tails</q>, and you ll
                 know the outcome in seconds. <br /> <br />{" "}
                 <span className="underline">Step 4: Verifying Fairness</span>{" "}
-                <br /> We believe in transparency, and that's why we provide you
+                <br /> We believe in transparency, and that s why we provide you
                 with all the information you need to verify the fairness of our
-                game. After each coinflip, you'll see: The CID. The result
+                game. After each coinflip, you ll see: The CID. The result
                 (Heads or Tails). The random number used to determine the
                 outcome. The seed that initialized our CSPRNG for that specific
                 coinflip. <br /> <br />{" "}
@@ -89,7 +89,7 @@ function Verify() {
                 <span className="underline">
                   Frequently Asked Questions (FAQ)
                 </span>{" "}
-                <br /> Still have questions? We've added a state-of-the-art AI
+                <br /> Still have questions? We ve added a state-of-the-art AI
                 chatbot from Zodbyte to guide you through the process or answer
                 any questions you may have.{" "}
               </p>

@@ -12,8 +12,8 @@ function Verify() {
     <div className="relative mt-[321px]">
       <SingleTree className="absolute -top-52 left-96 hidden lg:block" />
       <div className="flex flex-col lg:flex-row justify-center lg:items-start items-center gap-[84px] px-6">
-        <div className="flex flex-col justify-center items-center max-w-[443px] shadow-2xl pb-6 pl-[72px] pr-[55px]">
-          <h1 className="text-[56px] font-bold text-primary text-center">
+        <div className="flex flex-col justify-center mx-10 items-center max-w-[443px] shadow-2xl pb-6 px-3 rounded-lg md:pl-[72px] md:pr-[55px]">
+          <h1 className="lg:text-[56px] text-3xl font-bold text-primary text-center">
             Verify
           </h1>
           <div className="flex flex-col">
@@ -46,7 +46,7 @@ function Verify() {
           ></textarea>
         </div>
         <div className="2xl:w-[970px]">
-          <h1 className="text-[56px] font-bold text-primary text-center">
+          <h1 className="lg:text-[56px] text-3xl font-bold text-primary text-center">
             How It Works
           </h1>
           <div className="text-[#90A4AE] bg-[#F3F4FD]">

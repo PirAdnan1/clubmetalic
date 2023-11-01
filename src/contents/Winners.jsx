@@ -2,10 +2,10 @@ import React from "react";
 
 function Winners() {
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:items-start lg:mx-0 justify-center gap-[84px]">
-      <div className="flex flex-col shrink-0">
+    <div className="flex flex-col lg:flex-row items-center lg:items-start mx-32 justify-center gap-[84px]">
+      <div className="flex flex-col">
         <h1 className="lg:text-[56px] text-3xl text-center pb-[30px] font-bold text-primary">Previous Winners</h1>
-        <table className="table-auto 2xl:w-[970px] md:w-[720px] w-full overflow-x-auto text-start">
+        <table className="table-auto 2xl:w-[970px] md:w-[720px] w-[420px] mx-10 text-start">
           <thead className="text-[#90A4AE] text-xs text-left">
             <tr>
               <th className="px-4 pb-10 ">CID</th>

@@ -69,7 +69,7 @@ function Verify() {
                 outcomes. This ensures that the result of each coinflip is truly
                 random and impossible to predict. <br /> <br />{" "}
                 <span className="underline">Step 3: Displaying Results</span>{" "}
-                <br /> Once the coinflip is complete, we'll immediately display
+                <br /> Once the coinflip is complete, we ll immediately display
                 the result to you. It could be <q>Heads</q> or <q>Tails</q>, and you ll
                 know the outcome in seconds. <br /> <br />{" "}
                 <span className="underline">Step 4: Verifying Fairness</span>{" "}

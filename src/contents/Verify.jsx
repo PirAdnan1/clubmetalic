@@ -11,7 +11,7 @@ function Verify() {
     <Container>
     <div className="relative mt-[321px]">
       <SingleTree className="absolute -top-52 left-96" />
-      <div className="flex flex-col lg:flex-row gap-[84px]">
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-[84px] px-6">
         <div className="flex flex-col justify-center mx-auto shadow-2xl pb-6 pl-[72px] pr-[55px]">
           <h1 className="text-[56px] font-bold text-primary text-center">
             Verify
@@ -45,7 +45,7 @@ function Verify() {
             placeholder="Here is your result"
           ></textarea>
         </div>
-        <div>
+        <div className="2xl:w-[970px] w-[720px]">
           <h1 className="text-[56px] font-bold text-primary text-center">
             How It Works
           </h1>
@@ -54,7 +54,7 @@ function Verify() {
               Here w ll guide you through the key steps of how our game
               operates and how we ensure fairness.
             </p>
-            <div className="shadow-lg px-[42px] py-[18px] mt-3">
+            <div className="shadow-lg px-[42px] pt-[31px] pb-[85px] mt-3">
               <p className="text-sm max-w-[792px]">
                 <span className="underline">Step 1: Initiating a Coinflip</span>{" "}
                 <br /> To get started, you simply select the amount you want to

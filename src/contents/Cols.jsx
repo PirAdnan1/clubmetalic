@@ -1,17 +1,18 @@
 import React from "react";
+import Image from "next/image";
 
 // components
 import Container from "@/components/Container";
 
 // assest
 import Card from "@/assets/Card";
-import ButtonWhite from "@/assets/Button";
+import DivButton from "@/assets/divButton.png"
 import BlueIcon from "@/assets/BlueIcon";
 
 function Cols() {
   return (
     <Container>
-      <div className="grid md:grid-cols-3 bg-[#F3F4FD] gap-24 justify-center px-8 2xl:mx-0">
+      <div className="grid lg:grid-cols-3 bg-[#F3F4FD] gap-24 justify-center px-8 2xl:mx-0">
         <div className="flex px-6 flex-col justify-center items-center bg-white rounded-xl shadow-lg max-w-[622px] w-full">
           <h1 className="text-[56px] text-primary font-bold">Deposit</h1>
           <p className="text-[#546E7A] text-base font-bold leading-normal">
@@ -62,7 +63,7 @@ function Cols() {
             <span className="text-[#546E7A] text-base font-bold leading-normal">
               Step two
             </span>
-            <ButtonWhite />
+            <Image src={DivButton} />
           </div>
           <div className="flex items-center justify-center gap-48">
             <div className="bg-white flex justify-center items-center px-3 py-2 shadow-lg rounded-lg">

@@ -4,7 +4,7 @@ function Winners() {
   return (
     <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-[84px]">
       <div className="flex flex-col shrink-0">
-        <h1 className="text-[56px] text-center pb-[78px] font-bold text-primary">Previous Winners</h1>
+        <h1 className="text-[56px] text-center pb-[30px] font-bold text-primary">Previous Winners</h1>
         <table className="table-auto 2xl:w-[970px] md:w-[720px] w-full overflow-x-auto text-start">
           <thead className="text-[#90A4AE] text-xs text-left">
             <tr>
@@ -49,7 +49,7 @@ function Winners() {
         </table>
       </div>
       <div>
-        <h1 className="text-[56px] font-bold text-center pb-[78px] text-primary">Champion</h1>
+        <h1 className="text-[56px] font-bold text-center pb-[40px] text-primary">Champion</h1>
         <div className="shadow-lg px-12 py-7">
           <div className="text-[#90A4AE] flex items-center gap-24 justify-between px-10">
             <span>username</span>

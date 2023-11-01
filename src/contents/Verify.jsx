@@ -10,9 +10,9 @@ function Verify() {
   return (
     <Container>
     <div className="relative mt-[321px]">
-      <SingleTree className="absolute -top-52 left-96" />
+      <SingleTree className="absolute -top-52 left-96 hidden lg:block" />
       <div className="flex flex-col lg:flex-row justify-center items-start gap-[84px] px-6">
-        <div className="flex flex-col justify-center mx-auto max-w-[443px] shadow-2xl pb-6 pl-[72px] pr-[55px]">
+        <div className="flex flex-col justify-center items-center max-w-[443px] shadow-2xl pb-6 pl-[72px] pr-[55px]">
           <h1 className="text-[56px] font-bold text-primary text-center">
             Verify
           </h1>
@@ -25,10 +25,10 @@ function Verify() {
             <input
               type="number"
               placeholder="Enter Provided Random Number"
-              className="max-w-[320px] py-6 outline-none pl-7 pr-3 focus:outline-none bg-[#F3F4FD] mt-6 shadow-lg rounded-2xl"
+              className="w-[320px] py-6 outline-none pl-7 pr-3 focus:outline-none bg-[#F3F4FD] mt-6 shadow-lg rounded-2xl"
             />
           </div>
-          <div className="flex items-center justify-between my-8">
+          <div className="flex items-center gap-7 justify-between my-8">
             <span className="p-4 shadow-lg rounded-2xl">Heads</span>
             <span>Pick your result</span>
             <span className="p-4 shadow-lg rounded-2xl border border-black">
@@ -45,7 +45,7 @@ function Verify() {
             placeholder="Here is your result"
           ></textarea>
         </div>
-        <div className="2xl:w-[970px] max-w-[720px]">
+        <div className="2xl:w-[970px]">
           <h1 className="text-[56px] font-bold text-primary text-center">
             How It Works
           </h1>

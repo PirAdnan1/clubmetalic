@@ -1,83 +1,176 @@
-import React from "react";
-import Link from "next/link";
+// hooks
 import { useState } from "react";
+import { useRouter } from "next/router";
+
+// util
 import clsx from "clsx";
+import cn from "@/utills/cn";
 
 // components
 import Container from "./Container";
+import Link from "next/link";
 
-// assest
-import User from "@/assets/User";
-import Dropdown from "@/assets/DropDown";
-import DropUp from "@/assets/DropUp";
-import Menue from "./Menue";
+// hooks
+import useIsMobile from "./useIsMobile";
+
+// icons
 import CloseButton from "./CloseButton";
+import Menue from "./Menue";
+import DropUp from "@/assets/DropUp";
+import Dropdown from "@/assets/DropDown";
+import User from "@/assets/User";
 
-function Navbar() {
-  const [menuClosed, setMenuClosed] = useState(true);
+export default function Navbar() {
+  const isMobile = useIsMobile(1024);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <Container>
-      <nav className="flex flex-col lg:flex-row lg:items-center items-start pl-6 lg:pl-0 lg:justify-center  justify-start lg:gap-56 gap-6 pt-5 pb-4 bg-secondary shadow-[0px_3px_3px_0px_rgba(196, 206, 218, 0.51)]">
-        <div className="flex items-center">
-          <div>
-            <h1 className="text-primary lg:text-4xl text-2xl max-w-[159px] lg:max-w-full leading-5 font-bold">
-              double your net worth<span className="text-base">.club</span>
-            </h1>
-          </div>
-          <div>
-            <button
-              className="lg:hidden float-right"
-              onClick={() => setMenuClosed((closed) => !closed)}
-            >
-              {menuClosed ? <Menue /> : <CloseButton />}
-            </button>
-          </div>
-        </div>
-
-        <ul
+      <div className="flex justify-between items-center py-7 px-4 lg:px-10 shadow-md">
+        <h1 className="text-primary lg:text-4xl text-2xl max-w-[159px] lg:max-w-full leading-5 font-bold">
+          double your net worth<span className="text-base">.club</span>
+        </h1>
+        <button
+          onClick={() => setIsMenuOpen(true)}
           className={clsx(
-            "text-primary flex flex-col lg:flex-row lg:items-center items-start  gap-7 text-base mt-4",
+            "pb-4 text-primary transition-colors hover:text-cool-grey-800",
             {
-              "hidden lg:flex flex-col": menuClosed,
-              "translate-x-0": !menuClosed,
+              hidden: !isMobile,
             }
           )}
         >
-          <Link href="#" className="font-medium whitespace-nowrap">
+          <Menue />
+        </button>
+        <div
+          className={clsx("flex flex-grow transition-transform duration-500", {
+            "fixed inset-0 z-50 translate-x-[100%] bg-white": isMobile,
+            "!translate-x-0": isMenuOpen,
+          })}
+        >
+          <div
+            className={clsx({
+              "flex flex-grow items-center justify-between": !isMobile,
+
+              "mx-auto flex max-w-sm flex-grow flex-col gap-12 text-2xl":
+                isMobile,
+            })}
+          >
+            <div
+              className={clsx("flex h-[100px] items-end justify-between", {
+                hidden: !isMobile,
+              })}
+            >
+              <h1 className="text-primary lg:text-4xl text-2xl max-w-[159px] lg:max-w-full leading-5 font-bold">
+                double your net worth<span className="text-base">.club</span>
+              </h1>
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="pb-4 pr-4 text-primary transition-colors hover:text-cool-grey-800"
+              >
+                <CloseButton />
+              </button>
+            </div>
+            {/* <ul
+              className={clsx("flex items-center lg:gap-16 gap-10 lg:ml-auto", {
+                "flex-col": isMobile,
+              })}
+            >
+              <li className="hover:text-primary text-xs text-secondary font-bold">
+                <Link
+                  href="/"
+                  className={cn("border-bottom-hover pb-2", {
+                    "text-primary border_on_clicked font-medium ":
+                      router.pathname == "/",
+                  })}
+                >
+                  STARTSEITE
+                </Link>
+              </li>
+              <li className="hover:text-primary text-xs text-secondary font-bold">
+                <Link
+                  href="/Anwaltskanzlei"
+                  className={cn("border-bottom-hover pb-2", {
+                    "text-primary border_on_clicked font-medium ":
+                      router.pathname == "/Anwaltskanzlei",
+                  })}
+                >
+                  Anwaltskanzlei
+                </Link>
+              </li>
+              <li className="hover:text-primary text-xs text-secondary font-bold">
+                <Link
+                  href="/iNSOLVENZRECHT"
+                  className={cn("border-bottom-hover pb-2", {
+                    "text-primary border_on_clicked font-medium ":
+                      router.pathname == "/iNSOLVENZRECHT",
+                  })}
+                >
+                  iNSOLVENZRECHT
+                </Link>
+              </li>
+              <li className="hover:text-primary text-xs text-secondary font-bold">
+                <Link
+                  href="/team"
+                  className={cn("border-bottom-hover pb-2", {
+                    "text-primary border_on_clicked font-medium ":
+                      router.pathname == "/team",
+                  })}
+                >
+                  team
+                </Link>
+              </li>
+              <li className="hover:text-primary text-xs text-secondary font-bold">
+                <Link
+                  href="/Kontakt"
+                  className={cn("border-bottom-hover pb-2", {
+                    "text-primary border_on_clicked font-medium ":
+                      router.pathname == "/Kontakt",
+                  })}
+                >
+                  Kontakt
+                </Link>
+              </li>
+            </ul> */}
+            <div
+              className={clsx("flex justify-center gap-7 lg:ml-auto", {
+                "w-full mx-auto  flex-col": isMobile,
+              })}
+            >
+                <Link href="#" className="font-medium whitespace-nowrap text-primary">
             How it works
           </Link>
-          <Link href="#" className="font-medium whitespace-nowrap">
-            Leaderboard
-          </Link>
-          <div className="relative">
-            <Link
-              href="#"
-              className="font-semibold rounded-lg whitespace-nowrap bg-white px-14 py-3 "
-            >
-              Sign In
-            </Link>
-            <div className="absolute top-1 left-3">
-              <User />
-            </div>
-            <div className="absolute top-2 right-1">
-              <Dropdown />
+              <Link href="#" className="font-medium whitespace-nowrap text-primary">
+                Leaderboard
+              </Link>
+              <div className="relative">
+                <Link
+                  href="#"
+                  className="font-semibold rounded-lg whitespace-nowrap bg-white px-14 py-3 "
+                >
+                  Sign In
+                </Link>
+                <div className="absolute top-1 left-3">
+                  <User />
+                </div>
+                <div className="absolute top-2 right-1">
+                  <Dropdown />
+                </div>
+              </div>
+              <div className="relative w-full">
+                <Link
+                  href="#"
+                  className="font-semibold bg-special whitespace-nowrap rounded-lg text-white px-14 py-3"
+                >
+                  Sign Up
+                </Link>
+                <div className="absolute top-2 right-3">
+                  <DropUp />
+                </div>
+              </div>
             </div>
           </div>
-          <div className="relative w-full">
-            <Link
-              href="#"
-              className="font-semibold bg-special whitespace-nowrap rounded-lg text-white px-14 py-3"
-            >
-              Sign Up
-            </Link>
-            <div className="absolute top-2 right-3">
-              <DropUp />
-            </div>
-          </div>
-        </ul>
-      </nav>
+        </div>
+      </div>
     </Container>
   );
 }
-
-export default Navbar;

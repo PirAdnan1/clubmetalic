@@ -2,8 +2,7 @@ import React from 'react'
 
 // components
 import Hero from './Hero'
-// import Navbar from '@/components/Navbar'
-import Navbar2 from '@/components/Navbar2'
+import Navbar from '@/components/Navbar'
 import Cols from './Cols'
 import Winners from './Winners'
 import Verify from './Verify'
@@ -13,7 +12,7 @@ function HomeContents() {
   return (
     <div>
         {/* <Navbar /> */}
-        <Navbar2 />
+        <Navbar />
         <Hero />
         <Cols />
         <Winners />

@@ -12,7 +12,7 @@ function Verify() {
     <div className="relative mt-[321px]">
       <SingleTree className="absolute -top-52 left-96" />
       <div className="flex flex-col lg:flex-row justify-center items-start gap-[84px] px-6">
-        <div className="flex flex-col justify-center mx-auto shadow-2xl pb-6 pl-[72px] pr-[55px]">
+        <div className="flex flex-col justify-center mx-auto max-w-[443px] shadow-2xl pb-6 pl-[72px] pr-[55px]">
           <h1 className="text-[56px] font-bold text-primary text-center">
             Verify
           </h1>
@@ -45,7 +45,7 @@ function Verify() {
             placeholder="Here is your result"
           ></textarea>
         </div>
-        <div className="2xl:w-[970px] w-[720px]">
+        <div className="2xl:w-[970px] max-w-[720px]">
           <h1 className="text-[56px] font-bold text-primary text-center">
             How It Works
           </h1>

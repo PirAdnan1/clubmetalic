@@ -15,7 +15,7 @@ function Cols() {
       <div className="grid lg:grid-cols-3 bg-[#F3F4FD] gap-24 justify-center px-8 2xl:mx-0">
         <div className="flex px-6 flex-col justify-center pb-3 md:pb-0 items-center bg-white rounded-xl shadow-lg max-w-[622px] w-full">
           <h1 className="lg:text-[56px] text-3xl text-primary font-bold">Deposit</h1>
-          <p className="text-[#546E7A] text-base font-bold leading-normal">
+          <p className="text-[#546E7A] text-base pt-5 font-bold leading-normal">
             Step one
           </p>
           <input
@@ -56,11 +56,11 @@ function Cols() {
           </button>
         </div>
         <div className="bg-white px-6 shadow-lg rounded-xl">
-          <h1 className="lg:text-[56px] text-3xl text-primary text-center font-bold">
+          <div className="flex flex-col justify-center items-center">
+          <h1 className="lg:text-[56px] lg:pt-6 text-3xl text-primary text-center font-bold">
             Flip
           </h1>
-          <div className="flex flex-col justify-center items-center">
-            <span className="text-[#546E7A] text-base font-bold leading-normal">
+            <span className="text-[#546E7A] pt-5 text-base font-bold leading-normal">
               Step two
             </span>
             <Image src={DivButton} />
@@ -101,7 +101,7 @@ function Cols() {
           <h1 className="lg:text-[56px] text-3xl text-primary text-center font-bold">
             Withdraw
           </h1>
-          <span className="text-[#546E7A] text-base text-center font-bold leading-normal">
+          <span className="text-[#546E7A] pt-5 text-base text-center font-bold leading-normal">
             Step three
           </span>
           <input

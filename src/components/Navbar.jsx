@@ -132,7 +132,7 @@ export default function Navbar() {
               </li>
             </ul> */}
             <div
-              className={clsx("flex justify-center gap-7 lg:ml-auto", {
+              className={clsx("flex justify-center gap-14 lg:ml-auto items-center", {
                 "w-full mx-auto  flex-col": isMobile,
               })}
             >
@@ -145,7 +145,7 @@ export default function Navbar() {
               <div className="relative">
                 <Link
                   href="#"
-                  className="font-semibold rounded-lg whitespace-nowrap bg-white px-14 py-3 "
+                  className="font-semibold rounded-lg whitespace-nowrap bg-white shadow-lg px-14 py-3 "
                 >
                   Sign In
                 </Link>
@@ -156,10 +156,10 @@ export default function Navbar() {
                   <Dropdown />
                 </div>
               </div>
-              <div className="relative w-full">
+              <div className="relative">
                 <Link
                   href="#"
-                  className="font-semibold bg-special whitespace-nowrap rounded-lg text-white px-14 py-3"
+                  className="font-semibold bg-special shadow-lg whitespace-nowrap rounded-lg text-white px-14 py-3"
                 >
                   Sign Up
                 </Link>

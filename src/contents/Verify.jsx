@@ -46,7 +46,7 @@ function Verify() {
           ></textarea>
         </div>
         <div className="2xl:w-[970px]">
-          <h1 className="lg:text-[56px] text-3xl font-bold text-primary text-center">
+          <h1 className="lg:text-[56px] text-3xl py-3 font-bold text-primary text-center">
             How It Works
           </h1>
           <div className="text-[#90A4AE] bg-[#F3F4FD]">

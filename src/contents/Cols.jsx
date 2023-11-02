@@ -13,7 +13,7 @@ function Cols() {
   return (
     <Container>
       <div className="grid lg:grid-cols-3 bg-[#F3F4FD] gap-24 justify-center px-8 2xl:mx-0">
-        <div className="flex px-6 flex-col justify-center items-center bg-white rounded-xl shadow-lg max-w-[622px] w-full">
+        <div className="flex px-6 flex-col justify-center pb-3 md:pb-0 items-center bg-white rounded-xl shadow-lg max-w-[622px] w-full">
           <h1 className="lg:text-[56px] text-3xl text-primary font-bold">Deposit</h1>
           <p className="text-[#546E7A] text-base font-bold leading-normal">
             Step one
